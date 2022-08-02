@@ -32,7 +32,7 @@ class User extends Model
 The recommended way to install **Compoships** is through [Composer](http://getcomposer.org/)
 
 ```bash
-composer require friendsofhyperf/compoships:^1.0
+composer require friendsofhyperf/compoships:^0.1.0
 ```
 
 ## Usage

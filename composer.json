@@ -18,7 +18,7 @@
     }
   ],
   "require": {
-    "hyperf/database": "~3.0.0"
+    "hyperf/database": "~2.2.0"
   },
   "require-dev": {
     "ext-sqlite3": "*",
@@ -38,7 +38,7 @@
   },
   "extra": {
       "branch-alias": {
-          "dev-main": "1.0-dev"
+          "0.x-dev": "0.1-dev"
       },
       "hyperf": {
           "config": "FriendsOfHyperf\\Compoships\\ConfigProvider"
