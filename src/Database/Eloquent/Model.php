@@ -8,9 +8,9 @@ declare(strict_types=1);
  * @document https://github.com/friendsofhyperf/compoships/blob/master/README.md
  * @contact  huangdijia@gmail.com
  */
-namespace Awobaz\Compoships\Database\Eloquent;
+namespace FriendsOfHyperf\Compoships\Database\Eloquent;
 
-use Awobaz\Compoships\Compoships;
+use FriendsOfHyperf\Compoships\Compoships;
 use Hyperf\Database\Model\Model as Eloquent;
 
 class Model extends Eloquent

@@ -28,13 +28,21 @@
   },
   "autoload": {
     "psr-4": {
-      "Awobaz\\Compoships\\": "src"
+      "FriendsOfHyperf\\Compoships\\": "src"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Awobaz\\Compoships\\Tests\\": "tests"
+      "FriendsOfHyperf\\Compoships\\Tests\\": "tests"
     }
+  },
+  "extra": {
+      "branch-alias": {
+          "dev-main": "1.0-dev"
+      },
+      "hyperf": {
+          "config": "FriendsOfHyperf\\Compoships\\ConfigProvider"
+      }
   },
   "minimum-stability": "dev",
   "prefer-stable": true,

@@ -8,7 +8,7 @@ declare(strict_types=1);
  * @document https://github.com/friendsofhyperf/compoships/blob/master/README.md
  * @contact  huangdijia@gmail.com
  */
-namespace Awobaz\Compoships\Database\Query;
+namespace FriendsOfHyperf\Compoships\Database\Query;
 
 use Hyperf\Database\Query\Builder as BaseQueryBuilder;
 

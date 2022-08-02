@@ -8,7 +8,7 @@ declare(strict_types=1);
  * @document https://github.com/friendsofhyperf/compoships/blob/master/README.md
  * @contact  huangdijia@gmail.com
  */
-namespace Awobaz\Compoships\Database\Eloquent\Relations;
+namespace FriendsOfHyperf\Compoships\Database\Eloquent\Relations;
 
 use Hyperf\Database\Model\Collection;
 use Hyperf\Database\Model\Model;

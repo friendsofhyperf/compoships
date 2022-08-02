@@ -8,10 +8,10 @@ declare(strict_types=1);
  * @document https://github.com/friendsofhyperf/compoships/blob/master/README.md
  * @contact  huangdijia@gmail.com
  */
-namespace Awobaz\Compoships;
+namespace FriendsOfHyperf\Compoships;
 
-use Awobaz\Compoships\Database\Eloquent\Concerns\HasRelationships;
-use Awobaz\Compoships\Database\Query\Builder as QueryBuilder;
+use FriendsOfHyperf\Compoships\Database\Eloquent\Concerns\HasRelationships;
+use FriendsOfHyperf\Compoships\Database\Query\Builder as QueryBuilder;
 
 trait Compoships
 {
@@ -46,7 +46,7 @@ trait Compoships
     /**
      * Configure Eloquent to use Compoships Query Builder.
      *
-     * @return \Awobaz\Compoships\Database\Query\Builder|static
+     * @return \FriendsOfHyperf\Compoships\Database\Query\Builder|static
      */
     protected function newBaseQueryBuilder()
     {
