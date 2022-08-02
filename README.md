@@ -1,5 +1,11 @@
 # Compoships
 
+[![Latest Test](https://github.com/friendsofhyperf/compoships/workflows/tests/badge.svg)](https://github.com/friendsofhyperf/compoships/actions)
+[![Latest Stable Version](https://poser.pugx.org/friendsofhyperf/compoships/v/stable.svg)](https://packagist.org/packages/friendsofhyperf/compoships)
+[![Latest Unstable Version](https://poser.pugx.org/friendsofhyperf/compoships/v/unstable.svg)](https://packagist.org/packages/friendsofhyperf/compoships)
+[![Total Downloads](https://img.shields.io/packagist/dt/friendsofhyperf/compoships)](https://packagist.org/packages/friendsofhyperf/compoships)
+[![License](https://img.shields.io/packagist/l/friendsofhyperf/compoships)](https://github.com/friendsofhyperf/compoships)
+
 **Compoships** offers the ability to specify relationships based on two (or more) columns in Hyperf's Model ORM. The need to match multiple columns in the definition of an Eloquent relationship often arises when working with third party or pre existing schema/database.
 
 ## The problem
@@ -21,21 +27,12 @@ class User extends Model
 }
 ```
 
-### Related discussions
-
-* [Relationship on multiple keys](https://laracasts.com/discuss/channels/eloquent/relationship-on-multiple-keys)
-* [Querying relations with extra conditions not working as expected](https://github.com/laravel/framework/issues/1272)
-* [Querying relations with extra conditions in Eager Loading not working](https://github.com/laravel/framework/issues/19488)
-* [BelongsTo relationship with 2 foreign keys](https://laravel.io/forum/08-02-2014-belongsto-relationship-with-2-foreign-keys)
-* [Laravel Eloquent: multiple foreign keys for relationship](https://stackoverflow.com/questions/48077890/laravel-eloquent-multiple-foreign-keys-for-relationship/49834070#49834070)
-* [Laravel hasMany association with multiple columns](https://stackoverflow.com/questions/32471084/laravel-hasmany-association-with-multiple-columns)
-
 ## Installation
 
 The recommended way to install **Compoships** is through [Composer](http://getcomposer.org/)
 
 ```bash
-composer require friendsofhyperf/compoships
+composer require friendsofhyperf/compoships:^1.0
 ```
 
 ## Usage
