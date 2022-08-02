@@ -35,20 +35,20 @@ class User extends Model
 The recommended way to install **Compoships** is through [Composer](http://getcomposer.org/)
 
 ```bash
-composer require awobaz/compoships
+composer require friendsofhyperf/compoships
 ```
 
 ## Usage
 
-### Using the `Awobaz\Compoships\Database\Eloquent\Model` class
+### Using the `FriendsOfHyperf\Compoships\Database\Eloquent\Model` class
 
-Simply make your model class derive from the `Awobaz\Compoships\Database\Eloquent\Model` base class. The `Awobaz\Compoships\Database\Eloquent\Model` extends the `Eloquent` base class without changing its core functionality.
+Simply make your model class derive from the `FriendsOfHyperf\Compoships\Database\Eloquent\Model` base class. The `FriendsOfHyperf\Compoships\Database\Eloquent\Model` extends the `Eloquent` base class without changing its core functionality.
 
-### Using the `Awobaz\Compoships\Compoships` trait
+### Using the `FriendsOfHyperf\Compoships\Compoships` trait
 
-If for some reasons you can't derive your models from `Awobaz\Compoships\Database\Eloquent\Model`, you may take advantage of the `Awobaz\Compoships\Compoships` trait. Simply use the trait in your models.
+If for some reasons you can't derive your models from `FriendsOfHyperf\Compoships\Database\Eloquent\Model`, you may take advantage of the `FriendsOfHyperf\Compoships\Compoships` trait. Simply use the trait in your models.
 
-**Note:** To define a multi-columns relationship from a model *A* to another model *B*, **both models must either extend `Awobaz\Compoships\Database\Eloquent\Model` or use the `Awobaz\Compoships\Compoships` trait**
+**Note:** To define a multi-columns relationship from a model *A* to another model *B*, **both models must either extend `FriendsOfHyperf\Compoships\Database\Eloquent\Model` or use the `FriendsOfHyperf\Compoships\Compoships` trait**
 
 ### Syntax
 
@@ -61,7 +61,7 @@ use Hyperf\Database\Model\Model;
 
 class A extends Model
 {
-    use \Awobaz\Compoships\Compoships;
+    use \FriendsOfHyperf\Compoships\Compoships;
     
     public function b()
     {
@@ -79,7 +79,7 @@ use Hyperf\Database\Model\Model;
 
 class B extends Model
 {
-    use \Awobaz\Compoships\Compoships;
+    use \FriendsOfHyperf\Compoships\Compoships;
     
     public function a()
     {
@@ -107,7 +107,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class User extends Model
 {
-    use \Awobaz\Compoships\Compoships;
+    use \FriendsOfHyperf\Compoships\Compoships;
     
     public function tasks()
     {
@@ -125,7 +125,7 @@ use Hyperf\Database\Model\Model;
 
 class Task extends Model
 {
-    use \Awobaz\Compoships\Compoships;
+    use \FriendsOfHyperf\Compoships\Compoships;
     
     public function user()
     {
@@ -133,66 +133,6 @@ class Task extends Model
     }
 }
 ```
-
-## Supported relationships
-
-**Compoships** only supports the following Hyperf's Model relationships:
-
-* hasOne
-* HasMany
-* belongsTo
-
-Also please note that while **nullable columns are supported by Compoships**, relationships with only null values are not currently possible.
-
-## Support for nullable columns in 2.x
-
-Version 2.x brings support for nullable columns. The results may now be different than on version 1.x when a column is null on a relationship, so we bumped the version to 2.x, as this might be a breaking change.
-
-## Disclaimer
-
-**Compoships** doesn't bring support for composite keys in Laravel's Eloquent. This package only offers the ability to specify relationships based on more than one column. In a Laravel project, it's recommended for all models' tables to have a single primary key. But there are situations where you'll need to match many columns in the definition of a relationship even when your models' tables have a single primary key.
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://github.com/topclaudy/compoships/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests.
-
-[![](https://sourcerer.io/fame/topclaudy/topclaudy/compoships/images/0)](https://sourcerer.io/fame/topclaudy/topclaudy/compoships/links/0)
-[![](https://sourcerer.io/fame/topclaudy/topclaudy/compoships/images/1)](https://sourcerer.io/fame/topclaudy/topclaudy/compoships/links/1)
-[![](https://sourcerer.io/fame/topclaudy/topclaudy/compoships/images/2)](https://sourcerer.io/fame/topclaudy/topclaudy/compoships/links/2)
-[![](https://sourcerer.io/fame/topclaudy/topclaudy/compoships/images/3)](https://sourcerer.io/fame/topclaudy/topclaudy/compoships/links/3)
-[![](https://sourcerer.io/fame/topclaudy/topclaudy/compoships/images/4)](https://sourcerer.io/fame/topclaudy/topclaudy/compoships/links/4)
-[![](https://sourcerer.io/fame/topclaudy/topclaudy/compoships/images/5)](https://sourcerer.io/fame/topclaudy/topclaudy/compoships/links/5)
-[![](https://sourcerer.io/fame/topclaudy/topclaudy/compoships/images/6)](https://sourcerer.io/fame/topclaudy/topclaudy/compoships/links/6)
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/topclaudy/compoships/tags).
-
-## Unit Tests
-
-To run unit tests you have to obtain manually proper version of PHPUnit
-
-* if you have PHP version 7.1 please get [PHPUnit 7](https://phar.phpunit.de/phpunit-7.phar)
-* if you have PHP version 7.2 please get [PHPUnit 8](https://phar.phpunit.de/phpunit-8.phar)
-* if you have PHP version 7.3 and higher please get [PHPUnit 9](https://phar.phpunit.de/phpunit-9.phar)
-
-Example
-
-```bash
-curl -L -O https://phar.phpunit.de/phpunit-9.phar
-mv phpunit-9.phar phpunit
-chmod +x phpunit
-./phpunit
-```
-
-## Authors
-
-* [Claudin J. Daniel](https://github.com/topclaudy) - *Initial work*
-
-## Sponsored by
-
-* [StockTreats](https://stocktreats.com) - Stock Market Insights With Trading Tips And Tricks
-* [Awobaz](https://awobaz.com) - Web/Mobile agency based in Montreal, Canada
 
 ## License
 
